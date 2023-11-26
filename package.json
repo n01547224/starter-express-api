@@ -2,7 +2,7 @@
   "name": "assgn4-mongo-saeed",
   "version": "1.0.0",
   "description": "Saeed assignment 4",
-  "main": "app.js",
+  "main": "app-q2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
