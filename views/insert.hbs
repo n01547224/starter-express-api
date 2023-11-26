@@ -1,0 +1,59 @@
+    <h1>Edit Invoice</h1>
+
+    <form action="" method="POST">
+
+        <input type="hidden" name="_method" value="PUT">
+        
+        <label for="invoiceID">Invoice ID:</label>
+        <input type="text" id="invoiceID" name="invoiceID" value="{{invoice.invoiceID}}" required>
+
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" value="{{invoice.branch}}">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="{{invoice.city}}">
+
+        <label for="customerType">Customer Type:</label>
+        <input type="text" id="customerType" name="customerType" value="{{invoice.customerType}}">
+
+        <label for="productLine">Product Line:</label>
+        <input type="text" id="productLine" name="productLine" value="{{invoice.productLine}}">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{invoice.name}}">
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image" value="{{invoice.image}}">
+
+        <label for="unitPrice">Unit Price:</label>
+        <input type="number" id="unitPrice" name="unitPrice" value="{{invoice.unitPrice}}">
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="{{invoice.quantity}}">
+
+        <label for="tax">Tax 5%:</label>
+        <input type="number" id="tax" name="tax" value="{{invoice.tax}}">
+
+        <label for="total">Total:</label>
+        <input type="number" id="total" name="total" value="{{invoice.total}}">
+
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" value="{{invoice.date}}">
+
+        <label for="time">Time:</label>
+        <input type="text" id="time" name="time" value="{{invoice.time}}">
+
+        <label for="payment">Payment:</label>
+        <input type="text" id="payment" name="payment" value="{{invoice.payment}}">
+
+        <label for="cogs">COGS:</label>
+        <input type="number" id="cogs" name="cogs" value="{{invoice.cogs}}">
+
+        <label for="grossIncome">Gross Income:</label>
+        <input type="number" id="grossIncome" name="grossIncome" value="{{invoice.grossIncome}}">
+
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" value="{{invoice.rating}}">
+
+        <button type="submit">Insert Invoice</button>
+    </form>
