@@ -90,7 +90,7 @@ app.post('/api/invoice', function (req, res) {
 });
 
 //New Route for handelbars insert for questiion2
-app.get('/api/insert/invoice', function (req, res) {
+app.get('/', function (req, res) {
     // create mongoose method to create a new record into the collection
     console.log(req.body);
     const data = createInvoiceData(req.body);
