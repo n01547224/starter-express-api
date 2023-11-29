@@ -1,3 +1,12 @@
+/*
+***************************************************************************** *** 
+ * * ITE5315 – Assignment 4 
+ * * I declare that this assignment is my own work in accordance with Humber Academic Policy. * 
+ * No part of this assignment has been copied manually or electronically from any other source * 
+ * (including web sites) or distributed to other students. * 
+ * * Name: SAEEDUDDIN MOHAMMED Student ID:N01547224 Date:26-11-2023 *
+ *  * ****************************************************************************** *
+ * */ 
 var express = require('express');
 var mongoose = require('mongoose');
 var app = express();
@@ -112,7 +121,7 @@ app.put('/api/invoice/:invoiceID', function (req, res) {
     console.log(req.body);
 
     let id = req.params.invoiceID;
-
+    const data = createInvoiceData(req.body);
     // save the user
     Invoice.findByIdAndUpdate(id, data, function (err, invoice) {
         if (err) throw err;

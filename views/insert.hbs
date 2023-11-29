@@ -1,9 +1,7 @@
-    <h1>Edit Invoice</h1>
+    <h1>Insert Invoice</h1>
 
-    <form action="" method="POST">
+    <form action="/api/invoice" method="POST">
 
-        <input type="hidden" name="_method" value="PUT">
-        
         <label for="invoiceID">Invoice ID:</label>
         <input type="text" id="invoiceID" name="invoiceID" value="{{invoice.invoiceID}}" required>
 
