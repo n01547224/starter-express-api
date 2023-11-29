@@ -93,7 +93,8 @@ app.post('/api/invoice', function (req, res) {
         Invoice.find(function (err, invoices) {
             if (err)
                 res.send(err)
-            res.json(invoices);
+                const invoiceID = req.body.invoiceID;
+                res.render('success', { invoiceID });
         });
     });
 });
@@ -141,6 +142,7 @@ app.delete('/api/invoice/:invoiceID', function (req, res) {
             res.send('Successfully! Invoice has been Deleted.');
     });
 });
+
 
 app.get('*', function (req, res) {
     res.status(404).render('error'); // Render the error page for 404 (Not Found)
